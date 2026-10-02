@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Artistic Prints | Alberta Instructor Prep</title>
+
+  <meta name="description"
+        content="Alberta Instructor Prep is a Windows desktop exam-preparation application with 500 practice questions, 50-question mock exams, mistake review and progress tracking.">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #172033;
+      background: #f7f9fc;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0b3261;
+      color: white;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      font-size: 1.45rem;
+      font-weight: 700;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 24px;
+      font-weight: 600;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0b3261, #1264b0);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.4rem, 6vw, 4.7rem);
+      line-height: 1.05;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 span {
+      color: #ffd51f;
+    }
+
+    .hero h2 {
+      font-size: 1.35rem;
+      font-weight: 400;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 0 auto 32px;
+      font-size: 1.08rem;
+      opacity: 0.95;
+    }
+
+    .buy-button {
+      display: inline-block;
+      background: #ffd51f;
+      color: #10284b;
+      text-decoration: none;
+      font-size: 1.15rem;
+      font-weight: 700;
+      padding: 15px 30px;
+      border-radius: 8px;
+      box-shadow: 0 6px 16px rgba(0,0,0,.18);
+    }
+
+    .price-note {
+      display: block;
+      margin-top: 13px;
+      font-size: .95rem;
+    }
+
+    .section {
+      max-width: 1150px;
+      margin: auto;
+      padding: 70px 24px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.1rem;
+      color: #0b3261;
+      margin-bottom: 12px;
+    }
+
+    .section-intro {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 40px;
+      color: #566174;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+    }
+
+    .feature {
+      background: white;
+      padding: 28px;
+      border-radius: 12px;
+      box-shadow: 0 5px 18px rgba(26, 48, 79, .08);
+    }
+
+    .feature h3 {
+      color: #0d5ca6;
+      margin-bottom: 10px;
+    }
+
+    .product {
+      background: white;
+    }
+
+    .product-box {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .product-box h2 {
+      color: #0b3261;
+      font-size: 2.3rem;
+      margin-bottom: 18px;
+    }
+
+    .product-box p {
+      margin-bottom: 20px;
+      color: #4e596b;
+    }
+
+    .details {
+      margin: 32px auto;
+      max-width: 600px;
+      text-align: left;
+      background: #f3f7fc;
+      padding: 25px 30px;
+      border-radius: 10px;
+    }
+
+    .details li {
+      margin: 9px 0;
+    }
+
+    .disclaimer {
+      margin-top: 35px;
+      padding: 18px;
+      background: #eef2f7;
+      border-radius: 8px;
+      font-size: .92rem;
+      color: #5b6472;
+    }
+
+    footer {
+      background: #081f3b;
+      color: #dce6f3;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    footer strong {
+      color: white;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0 8px;
+      }
+
+      .hero {
+        padding: 60px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="brand">Artistic Prints</div>
+
+  <nav>
+    <a href="#software">Software</a>
+    <a href="#features">Features</a>
+    <a href="#buy">Buy</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Alberta <span>Instructor Prep</span></h1>
+
+  <h2>Windows Desktop Exam-Preparation Software</h2>
+
+  <p>
+    Practice, review your mistakes and track your progress with a
+    dedicated desktop application designed for Alberta
+    driver-instructor exam preparation.
+  </p>
+
+  <a class="buy-button" href="#buy">
+    Buy Now — CA$29.99
+  </a>
+
+  <span class="price-note">
+    One-time purchase • License for up to 2 computers
+  </span>
+</section>
+
+<section class="section" id="features">
+
+  <h2 class="section-title">Prepare with Confidence</h2>
+
+  <p class="section-intro">
+    A focused study environment for practicing questions,
+    taking mock exams and reviewing your progress.
+  </p>
+
+  <div class="features">
+
+    <div class="feature">
+      <h3>500 Practice Questions</h3>
+      <p>
+        Build your knowledge through a comprehensive question bank
+        covering key driver-instructor exam-preparation topics.
+      </p>
+    </div>
+
+    <div class="feature">
+      <h3>50-Question Mock Exams</h3>
+      <p>
+        Take randomized 50-question practice exams and receive
+        your results when you finish.
+      </p>
+    </div>
+
+    <div class="feature">
+      <h3>Mistake Review</h3>
+      <p>
+        Return to questions you answered incorrectly and focus
+        your study time where it matters most.
+      </p>
+    </div>
+
+    <div class="feature">
+      <h3>Progress Tracking</h3>
+      <p>
+        Keep track of completed tests, scores and study progress
+        directly inside the application.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section product" id="software">
+
+  <div class="product-box">
+
+    <h2>Alberta Instructor Prep</h2>
+
+    <p>
+      Study on your own Windows computer with a dedicated
+      exam-preparation application instead of relying on scattered
+      notes and browser tabs.
+    </p>
+
+    <div class="details">
+      <ul>
+        <li>500 practice questions</li>
+        <li>Randomized 50-question mock exams</li>
+        <li>Mistake-review tools</li>
+        <li>Progress and exam-history tracking</li>
+        <li>Windows desktop application</li>
+        <li>License activation on up to 2 computers</li>
+      </ul>
+    </div>
+
+    <div id="buy">
+      <a class="buy-button" href="https://artisticprints.lemonsqueezy.com/checkout/buy/45386811-a53f-4471-8c53-33932ac2342e">
+        Buy Alberta Instructor Prep — CA$29.99
+      </a>
+    </div>
+
+    <div class="disclaimer">
+      Alberta Instructor Prep is independent exam-preparation software.
+      It is not affiliated with, endorsed by, or an official product of
+      the Government of Alberta.
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <strong>Artistic Prints</strong><br>
+  Alberta Instructor Prep<br><br>
+  &copy; 2026 Artistic Prints. All rights reserved.
+</footer>
+
+</body>
+</html>
